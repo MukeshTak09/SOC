@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Images || SOC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="terv.png" type="image/jpg type">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: grab;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  box-shadow: 2px 2px 10px 1px black;
+    border-radius: 10px 10pc;
+}
+
+.tablink:hover {
+  background-color: #777;
+  box-shadow: 10px 10px 20px 5px black;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Event {
+			background-size: 100% 100%;
+}
+#Practice {background-color:transparent; }
+#Fun {background-color:transparent; }
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+      margin: 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 35%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: baseline;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<script>
+    
+ </script>
+</head>
+<body>
+
+
+<button class="tablink" onclick="openCity('Event', this, 'red')" id="defaultOpen" >Events</button>
+<button class="tablink" onclick="openCity('Practice', this, 'red')">Practice</button>
+<button class="tablink" onclick="openCity('Fun', this, 'red')">Fun</button>
+<!--<button class="tablink" onclick="openCity('Oslo', this, 'orange')"></button>-->
+
+
+<div id="Event" class="tabcontent">
+  <div class="row"> 
+  <div class="column">
+    <img src="socb.jpg" style="width:100%">
+    <img src="soc1.jpg" style="width:100%">
+    <img src="Manu.jpg" style="width:100%"></div>
+	<div class="column">
+    <img src="soc7.jpg" style="width:100%">
+    <img src="soc8.jpg" style="width:100%">
+    <img src="ani.jpg" style="width:100%"></div>
+	<div class="column">
+    <img src="Manu.jpg" style="width:100%">
+    <img src="Muku.jpg" style="width:100%">
+    <img src="mukesh.jpg" style="width:100%"></div>
+	</div>
+</div>
+
+<div id="Practice" class="tabcontent">
+  <div class="row"> 
+  <div class="column">
+    <img src="socb.jpg" style="width:100%">
+    <img src="soc1.jpg" style="width:100%">
+    <img src="Manu.jpg" style="width:100%"></div>
+	<div class="column">
+    <img src="soc7.jpg" style="width:100%">
+    <img src="soc8.jpg" style="width:100%">
+    <img src="ani.jpg" style="width:100%"></div>
+	<div class="column">
+    <img src="Manu.jpg" style="width:100%">
+    <img src="Muku.jpg" style="width:100%">
+    <img src="mukesh.jpg" style="width:100%"></div>
+	</div>
+</div>
+</div>
+
+<div id="Fun" class="tabcontent">
+ <div class="row"> 
+  <div class="column">
+    <img src="socb.jpg" style="width:100%">
+    <img src="soc1.jpg" style="width:100%">
+    <img src="Manu.jpg" style="width:100%"></div>
+	<div class="column">
+    <img src="soc7.jpg" style="width:100%">
+    <img src="soc8.jpg" style="width:100%">
+    <img src="ani.jpg" style="width:100%"></div>
+	<div class="column">
+    <img src="Manu.jpg" style="width:100%">
+    <img src="Muku.jpg" style="width:100%">
+    <img src="mukesh.jpg" style="width:100%"></div>
+	</div>
+</div>
+</div>
+
+
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   <a href="soc.html"><button class="tablink" type="button" value="SOC" >SWAGGERS OUTBREAK CREW &#129311;</button></a>
+</body>
+</html> 

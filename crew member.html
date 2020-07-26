@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crew Members || SOC</title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width,initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+        
+
+<link rel="icon" href="terv.png" type="image/jpg type">
+
+<style>
+body {
+margin:0;
+padding:0;
+background:#262626;
+font-family:sans-serif;
+display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	
+	background-attachment:fixed;
+	background-image: url(team.jpg);
+	background-size:cover;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 18px/1.5 "Lato", sans-serif;
+  
+}
+
+.container {
+width :1280px;
+margin:70px;
+
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+}
+.container .box {
+position:relative;
+width:300px;
+height:300px;
+background:none;
+margin:10px;
+box-sizing: border-box;
+
+}
+li{
+display:block;
+text-decoration:none;
+float:left;
+padding:12px;
+}
+* {box-sizing: border-box;}
+
+ nav li a {
+  float: left;
+  color: rgba(123, 123, 123, 1);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  max-width:100%;
+
+}
+nav {
+	width:100%;
+	height:77px;
+ 
+  background-color: #dddddd;
+  padding: 0px 0px;
+  border-radius:0px;
+ position:fixed;
+ top:0px;
+ left:0px;
+ background-color:rgb(30,30,30);
+ filter:drop-shadow(2px 4px 6px black);
+     opacity: 0.9;
+	  z-index: 1;
+	    max-width:100%;
+  }
+nav : hover {
+
+}
+ nav li a:hover {
+  background-color: white;
+  color: black;
+}
+
+li a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+  
+  a {
+  text-decoration:none;
+  }
+  a img {
+     
+	width:70px;
+	height:70px;
+	border: none;
+    border-radius: 0px;
+    box-shadow: none;
+	}
+
+nav ul{
+float:right;
+margin-top: 15px;
+}
+
+.container .box .imgBox {
+max-width: 100%;
+transtion: transform 2s;
+}
+.container .box:hover .imgBox img {
+transform: scale(1.2);
+}
+.container .box .details {
+position: absolute;
+top: 10px;
+left: 10px;
+bottom: 10px;
+right: 10px;
+background: rgba(0,0,0,.8);
+border-radius : 55%;
+transform: scaleY(0);
+transition: transform .5s;
+}
+.container .box:hover .details {
+transform: scaleY(1);
+
+}
+.container .box .details .content {
+position : absolute;
+top : 55%;
+left:15%;
+transform: translateY(-50%);
+text-align:;
+padding: 15px;
+color:#fff;
+}
+.container .box .details .content h2 {
+margin:0;
+padding:0;
+font-size:20px;
+color:#ff0;
+}
+.container .box .details .content p {
+margin: -4px 0px 0;
+padding:0;
+}
+img {
+    width: 300px;
+    height: 300px;
+margin:0px;
+border:1px solid white;
+    border-radius: 55%;
+	box-shadow: 1px 2px 40px;
+}
+fa {
+ width: 60px;
+  height:60px;
+ padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 15px;
+  border-radius:50%;
+}
+span a.fa.fa-instagram {
+ background: deeppink;
+  color: white;
+  transform:scale(0.7);
+  font-size: 30px;
+  padding-top:15px;
+  padding-left:15px;
+  margin-top:125px;
+  margin-left:50px;
+  
+}
+footer {
+			text-align:center;
+		    background-color:black;
+			width:100%;
+			height:300px;
+			color: white;
+		}			
+
+  .fa {
+  padding: 26px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+border-radius:550px;
+display:inline-block;
+}
+  a.fa.fa-facebook {
+   background: #3B5998;
+  color: white;
+    width: 56px;
+    height: 56px;
+    padding-left: 24px;
+    padding-top: 20px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+ .fa-twitter {
+  background: #55ACEE;
+  color: white;
+    width: 56px;
+    height: 56px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+a.fa.fa-google {
+  background: #dd4b39;
+  color: white;
+    width: 56px;
+    height: 56px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+    width: 56px;
+    height: 56px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;    width: 56px;
+    height: 56px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+a.fa.fa-instagram {
+  background: deeppink;
+  color: white;
+    width: 56px;
+    height: 56px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+</style>
+</head>
+<body> <div class="container">
+<nav>
+<li style="float:left; font-size:30px; font-family:tahoma; padding:1px; cursor:pointer;margin:-40px -25px; "><a href="soc.html"><menu type="menu"><img src="terv.png" height="70px" width="70px"  style="float:"/>
+</a></menu></li>
+<li style="font-size:40px;font-family:Times new roman; color:aliceblue; margin-left:25px;">This is SOC &#129311; </li>
+<ul>
+
+<li> <a href="soc.html">Home</a></li>
+
+<li><a  class="active">Crew Member</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</nav>
+<div class="box">
+<div class="imgbox">
+<img src="shubham.jpeg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Shubham Jangid </h2>
+<p>[Curly]</p>
+<div  ><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="oggy.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Ashu</h2>
+<p>[Ashu].</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="prernab.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>    Prerna Bagri</h2>
+<p>[Tigress]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="anmol.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Anmol Sharma</h2>
+<p>[Chhota Bacha]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="nitesh.jpeg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Nitesh</h2>
+<p>[Nikki]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="oggyc.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Deepak kumar soni</h2>
+<p>[Oggy]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+></div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="spa.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Sparsh Kumar</h2>
+<p>Sparsh</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="ashish.jpeg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Ashish Saini</h2>
+<p>Ashish</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="twinkle.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Twinkle Bhoj</h2>
+<p>[Minnnie]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="anu.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Anishq Sharma</h2>
+<p>[Ani]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="1Akkidi.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Akshita Sharma</h2>
+<p>[Akki]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="riju.jpeg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Riju Mittal</h2>
+<p>[Rajjo]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="sukku.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Sukeerti Kota</h2>
+<p>[Sukku]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="nikhil.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Nikhil Bhaiyaa</h2>
+<p>[Nik]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="Manu7.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Manoj Kumar Tak</h2>
+<p>[Manu]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="preeto.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Preeti choudhary</h2>
+<p>[Preeto]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="sam.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Samiksha Bhatnagar</h2>
+<p>[Sami]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="Anu.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Anushka</h2>
+<p>[Pikachu]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="dora.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Prerna Kamat</h2>
+<p>[Dora]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div></div>
+<div class="box">
+<div class="imgbox">
+<img src="ritish.jpeg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Ritish Monga</h2>
+<p>[Mowgli]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="chneja.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Priyanka Chaneja</h2>
+<p>Priu</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="devanshu.png"  ></div>
+<div class="details">
+<div class="content">
+<h2>Devanshu Garg</h2>
+<p>[Devanshu]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="vishwa.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Vishwaraj Rathore</h2>
+<p>[Vishwa]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="varun.jpeg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Varun Bhutada</h2>
+<p>[Vasp]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="nishu.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Nishita Tak</h2>
+<p>BTS Nishu</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="Pranav.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Pranav Kotesh</h2>
+<p>PK</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="vikas.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Vikas yadav</h2>
+<p>Popeye</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="prerna.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Prerna Gupta</h2>
+<p>[Gudiya]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="komal.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Komal</h2>
+<p>Komi</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="priyu.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Priyanka Bangarwa</h2>
+<p>[Bombay]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="anshu.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Anshika</h2>
+<p>Dance</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="Molu.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Molishkha</h2>
+<p>Dance</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="mika.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Anamika Soni</h2>
+<p>[Mika]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="kingbob.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Mukesh tak</h2>
+<p>[Muku]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box">
+<div class="imgbox">
+<img src="soc6.jpg"  ></div>
+<div class="details">
+<div class="content">
+<h2>Aman soni</h2>
+<p>[Aman]</p>
+<div><span><a href="#" class="fa fa-instagram"></a> </span>
+ </div>
+</div>
+</div>
+</div>
+        
+        </div>
+		
+
+<footer>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ contact with us 
+<a href="facebook.com" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="takm1244@gmail.com" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/mukeshtak/" class="fa fa-linkedin"></a>
+<a href="youtube.com" class="fa fa-youtube"></a>
+
+<hr style="width:100%; margin:0px ; ">
+<br>
+Further queries, contact: +91-7023405885<br>
+Mail us : <a href="swaggersoutbreakcrew@gmail.com" >swaggersoutbreakcrew@gmail.com</a> 
+<br><br>
+With Love, SOC Family!
+<br>
+<p>&#169; SOC</p>
+</footer>
+
+</body>
+</html>
